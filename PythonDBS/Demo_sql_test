@@ -1,0 +1,43 @@
+import mysql.connector
+
+
+mydb = mysql.connector.connect(
+    host = "localhost",
+    user = "root",
+    password="P@piluis201",
+    database = "adventureworks"
+)
+print(mydb)
+
+mycursor = mydb.cursor()
+
+mycursor.execute("use adventureworks")
+
+mycursor.execute("select contact.FirstName from contact")
+
+mycursor.execute(join)
+for i in mycursor:
+    print(i)
+
+
+
+
+
+'''
+CHECK FOR DATABASES IN PYTHON!!!
+
+mycursor.execute("SHOW DATABASES")
+for db in mycursor:
+print(db)
+
+
+#this will run sections from the tables
+for i in mycursor:
+    print(i)
+
+
+
+#book if needed - https://openstax.org/books/introduction-python-programming/pages/1-2-input-output
+#w3 schools Db testing - https://www.w3schools.com/python/python_mysql_getstarted.asp
+
+'''
