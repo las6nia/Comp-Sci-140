@@ -1,3 +1,5 @@
+                                #Chapter 3                              
+
 '''
 temperature =  int(input("Enter the temperature: "))
 humidity =  int(input("Enter the humidity: "))
@@ -40,3 +42,22 @@ z = 3
 
 result = y*z<x-1 or z ==3
 print(result)
+
+#example
+# any positive value is True and any negative number (or 0) is determined as False
+
+a = 5
+b = 0
+comparison1 = (not a) == b
+comparison2 = a == b
+
+print(comparison1)
+print(comparison2)
+
+name = "This is a name and the name is adam Z"
+name = name.lower()
+if ('z' in name):
+    print("Z is in name")
+    #ord() to translate from character to number and 'chr' from number to character
+
+#class 11 - Loops
