@@ -69,14 +69,13 @@ for c in range(5):
         print(word[c], end=" ")
         #when you need to use index, use this function
     '''   
-#task - print unicode +5, will print 65 but will print 70, space +=5.
+#task - print unicode +5, will print 65 but will print 70 instead.
 sentence = "A quick brown fox"
 for c in range(17):
     result = int((ord(sentence[2])+5))
 print(chr(result)) #for my visual understanding
 print(result)
 
-print(ord(sentence))
 
 
 
