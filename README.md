@@ -1,4 +1,3 @@
-# Comp-Sci-140
 Comp Sci 140 @ UWGB (Python Programming)
 --
 for this repository 
