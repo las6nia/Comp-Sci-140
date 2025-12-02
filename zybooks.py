@@ -100,3 +100,41 @@ division2 = int((division1/1)/div_num)
 divison3 = int(division2 / div_num)
 print(division1, division2, divison3)
 
+
+
+'''
+Many documents use a specific format for a person's name. Write a program that reads a person's name in the following format:
+
+firstName middleName lastName (in one line)
+
+and outputs the person's name in the following format:
+
+lastName, firstInitial.middleInitial.
+
+Ex: If the input is:
+
+Pat Silly Doe
+the output is:
+
+Doe, P.S.
+
+'''
+
+# Read the full name
+#
+fullName = input("Enter full name: ")
+
+nameParts = fullName.split()
+
+firstName = nameParts[0]
+lastName = nameParts[-1]
+
+
+output = lastName + ", " + firstName[0] + "."
+
+if len(nameParts) == 3:
+    middleName = nameParts[1]
+    output = lastName + ", " + firstName[0] + "." + middleName[0] + "."
+
+print(output)
+
