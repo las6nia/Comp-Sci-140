@@ -10,7 +10,7 @@
 #Object - create examples of the class
 #Attributes - properties of these object
 #Methods - things that are done belonging to that class
-'''
+
 class student: #add a colon, replaces curly braces that are done in java
     #Attribute - first set of things
     studentId, firstName, lastName #instance attributes
@@ -64,7 +64,7 @@ print(acc2.getDetails())
 #check this error, joe doesn't have more money
 acc2.withdraw(2001)
 print(acc2.getDetails())
-'''
+
 #Task - create a book class with instance attributes title, author, and price. create an instance method to get details of a book object and chance the price of a book object. Create 3 difference book objects and use the instance methods to display the book information and chance the prices
 
 
