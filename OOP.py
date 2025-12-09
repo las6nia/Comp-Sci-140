@@ -29,4 +29,13 @@ class employee:
 
 #What is a constructor? a method that constructs a method for the class - in python = init
 '''
+#bank account
+class bankAccount:
+    balance = 0 #all 
+    customerName = "" #inititalize as no name
+    
+    def __init__(self, name, bal): #this is how a constructor is built.... self means "look at the current object, in java is 'this'"
+        self.customerName = name #passing the customer name 
+        self.balance = bal
+
 
