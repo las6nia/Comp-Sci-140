@@ -28,7 +28,7 @@ class employee:
     def
 
 #What is a constructor? a method that constructs a method for the class - in python = init
-'''
+
 #bank account
 class bankAccount:
     balance = 0 #all 
@@ -64,7 +64,62 @@ print(acc2.getDetails())
 #check this error, joe doesn't have more money
 acc2.withdraw(2001)
 print(acc2.getDetails())
+'''
+#Task - create a book class with instance attributes title, author, and price. create an instance method to get details of a book object and chance the price of a book object. Create 3 difference book objects and use the instance methods to display the book information and chance the prices
 
+
+class book:
+    bookPrice = 0
+    bookName = ""
+    def __init__ (self, book, cost):
+        self.bookName = book
+        self.bookPrice = cost
+    def displayInformation(self, book, cost):
+        self.bookName = book
+        self.bookPrice = cost
+        print(f"The name of this book is {self.bookName} and the price is {self.bookPrice}")
+    
+
+
+#Instructor Version: 
+class book2:
+    def __init__(self, title, author, price):
+        self.title = title
+        self.author = author
+        self.price= price
+    def getDetails(self):
+        return f"Book name: {self.title}, Book Author: {self.author}, Book Price: {self.price}"
+    
+    def changePrice(self, priceChange):
+        self.price = priceChange
+
+myBooks = [] ##teacher went to fast - check picture notes and edit later
+b1 = book2("Intro to C++", "Lind L Tailor", 65.30)
+b2 = book2("Intro to Python", "Adam James", 129.50)
+print(b1.getDetails) #check this 
+
+print(myBooks[0].getDetails()) #Check this later
+
+
+
+
+myBooks[0].author #this will print the author name in ''
+
+#Access modifyer - public - private(no one but you), 
+  self.author = __author #this will activate private mode and cannot be access, this will be fixed
+#Python does not enforce protected mode
+#To show the protected property you would do just 1 underscore as such:
+  self.author = _author
+
+#But how can I access in private mode?
+#you have to have Getters and set them inside the same classes, you can however acccess by the same classes
+
+#classes, objects, instance, list of objects, access modifiers, 
+
+
+
+
+        
 
 
 
